@@ -1,11 +1,17 @@
 package main;
 
-import model.Jatek;
+import Controller.ConsoleController;
+import model.JatekModel;
+import view.ConsoleView;
 
 public class KincsesLada {
 
     public static void main(String[] args) {
-        new Jatek();
+        
+        JatekModel model = new JatekModel();
+        ConsoleView view = new ConsoleView();
+        
+        new ConsoleController(model, view);
     }
     
 }

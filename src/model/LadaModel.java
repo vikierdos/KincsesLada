@@ -1,17 +1,17 @@
 package model;
 
-public class Lada {
+public class LadaModel {
     private String anyag;
     private String felirat;
     private boolean kincs;
 
-    public Lada(String anyag, String felirat, boolean kincs) {
+    public LadaModel(String anyag, String felirat, boolean kincs) {
         this.anyag = anyag;
         this.felirat = felirat;
         this.kincs = kincs;
     }
 
-    public Lada(String anyag, String felirat) {
+    public LadaModel(String anyag, String felirat) {
         this(anyag, felirat, false);
     }
 
