@@ -1,14 +1,13 @@
-
 package Controller;
 
 import model.JatekModel;
-import view.FelugroView;
+import view.CUIView;
 
-public class FelugroController {
+public class CUIController {
     private  JatekModel model;
-    private FelugroView view;
+    private CUIView view;
 
-    public FelugroController(JatekModel model, FelugroView view) {
+    public CUIController(JatekModel model, CUIView view) {
         this.model = model;
         this.view = view;
         
@@ -16,4 +15,6 @@ public class FelugroController {
         this.model.setValasztott(this.view.bekeres());
         this.view.megjelenit(this.model.ellenorzes());
     }
+    
+    
 }

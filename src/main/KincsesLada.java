@@ -1,8 +1,8 @@
 package main;
 
-import Controller.ConsoleController;
-import Controller.FelugroController;
+import Controller.CUIController;
 import model.JatekModel;
+import view.CUIView;
 import view.ConsoleView;
 import view.FelugroView;
 
@@ -15,10 +15,18 @@ public class KincsesLada {
         
         new ConsoleController(model, view);*/
         
-        JatekModel model = new JatekModel();
+        /*JatekModel model = new JatekModel();
         FelugroView view = new FelugroView();
         
-        new FelugroController(model, view);
+        new FelugroController(model, view);*/
+        
+        CUIView view;
+        JatekModel model = new JatekModel();
+        view = new ConsoleView();
+        new CUIController(model, view);
+        
+        view = new FelugroView();
+        new CUIController(model, view);
         
     }
     
